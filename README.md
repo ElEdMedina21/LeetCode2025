@@ -4,3 +4,7 @@ My goal with this repo is to develop a habit of solving problems that involve da
 
 
 To revisit:
+- 3 sum
+- Move Zeroes
+- Trapping Rain
+- Koko Bananas
