@@ -8,3 +8,5 @@ To revisit:
 - Move Zeroes
 - Trapping Rain
 - Koko Bananas
+- Search Matrix
+- Merge Intervals [x]
