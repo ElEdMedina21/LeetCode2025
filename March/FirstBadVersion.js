@@ -1,8 +1,8 @@
-const isBadVersion = (bad,n)=>{
-    if(n >= bad) return true
+const isBadVersion = (bad,num)=>{
+    if(num >= bad) return true
 }
 
-const FirstBadVersion = (bad)=>{
+const FirstBadVersion = (bad,n)=>{
     let bot = 1;
     let top = n
     let mid;
@@ -17,3 +17,5 @@ const FirstBadVersion = (bad)=>{
     }
     return bot
 }
+
+console.log(FirstBadVersion(4,5))
