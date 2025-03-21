@@ -11,3 +11,4 @@ To revisit:
 - Search Matrix
 - Merge Intervals [x]
 - Minimum Rotated
+- Search Rotated
