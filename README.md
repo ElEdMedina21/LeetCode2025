@@ -13,3 +13,5 @@ To revisit:
 - Minimum Rotated
 - Search Rotated
 - March 22
+- String Compressor
+- Linked Lists
