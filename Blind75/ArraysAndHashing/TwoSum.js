@@ -1,16 +1,22 @@
-var twoSum = function(nums, target) {
-    const pairs = {}
-    for(let i = 0; i < nums.length; i++){
-        if(pairs.hasOwnProperty(target-nums[i])){
-            return [i,pairs[target-nums[i]]]
-        }
-        pairs[nums[i]] ? '' : pairs[nums[i]] = i
-    }
-    // for(let num of nums){
-    //     if(num > target) continue
-    //     if(pairs[target - num]) return [num, target - num]
-    //     pairs[num] ? pairs[num] += 1*1 : pairs[num] = 1
-    // }
-};
+// var twoSum = function(nums, target) {
+//     const pairs = {}
+//     for(let i = 0; i < nums.length; i++){
+//         if(pairs.hasOwnProperty(target-nums[i])){
+//             return [i,pairs[target-nums[i]]]
+//         }
+//         pairs[nums[i]] ? '' : pairs[nums[i]] = i
+//     }
+// };
 
-console.log(twoSum([-3,4,3,90],0))
+var twoSum = (nums, target)=>{
+    const pairs = new Map()
+    for(let i = 0; i < nums.length; i++){
+        let secondNum = target - nums[i]
+        if(pairs.has(secondNum)){
+            return [i, pairs.get(secondNum)]
+        }
+        pairs.has(nums[i]) ? '' : pairs.set(nums[i], i)
+    }
+}
+
+console.log(twoSum([3,3],6))
